@@ -1,5 +1,5 @@
--@startuml Mastermind_MV_v1_0_0
-    title Mastermind_MV v1.0.0
+-@startuml Mastermind_MV_v1_0_1
+    title Mastermind_MV v1.0.1
 
     package "instanceOfTeam.mastermin" {
         class Mastermind {
