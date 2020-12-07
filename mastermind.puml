@@ -158,6 +158,9 @@
     View *--> Game
 
     SubView *--> Game
+    SubView ..> Game
+    SubView ..> Message
+    SubView ..> Console
 
     SubView <|-down- PlayView
     SubView <|-down- ResumeView
@@ -167,19 +170,5 @@
     StartView .down.> Console
 
     PlayView *-down-> AttemptView
-    PlayView .down.> Message
-    PlayView .down.> Console
     PlayView ..> Attempt
-    PlayView ..> Game
-
-
-    AttemptView ..> Game
-    AttemptView .down.> Message
-    AttemptView .down.> Console
-
-
-    ResumeView .down.> Message
-    ResumeView ..> Game
-    ResumeView .down.> Console
-
 @enduml
