@@ -8,13 +8,15 @@ public class ResumeView extends SubView {
 		super(game);
 	}
 
-	public boolean interact() {
+	public boolean isResume() {
 		Console console = new Console();
 		String response;
+
+		if (!this.game.isWinner()) {
+			console.write(Message.LOSER.toString());
+		}
+
 		do {
-			if (!this.game.isWinner()) {
-				console.write(Message.LOSER.toString());
-			}
 			response = console.read(Message.RESUMEN.toString());
 		} while(!isYesOrNot(response));
 

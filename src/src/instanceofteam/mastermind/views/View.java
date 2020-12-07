@@ -19,6 +19,6 @@ public class View {
 		do {
 			this.startView.interact();
 			this.playView.interact();
-		} while (this.resumeView.interact());
+		} while (this.resumeView.isResume());
 	}
 }
